@@ -1,61 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock your Life - Data Analyst Recruitment</title>
+<title>Rock Your Life - Application Form</title>
 </head>
 <body>
-    <div class="container" style="margin: 20px; padding: 20px;">
-        <h1 id="company-name" style="margin-bottom: 10px;">Rock your Life</h1>
-        <h2 id="form-title" style="margin-bottom: 20px;">Data Analyst Recruitment Form</h2>
-        <form id="recruitment-form">
-            <div class="form-group" style="margin-bottom: 15px;">
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required>
-            </div>
-            
-            <div class="form-group" style="margin-bottom: 15px;">
-                <label for="age">Age:</label><br>
-                <input type="number" id="age" name="age" required>
-            </div>
-            
-            <div class="form-group" style="margin-bottom: 15px;">
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group" style="margin-bottom: 15px;">
-                <label for="contact">Contact Number:</label><br>
-                <input type="tel" id="contact" name="contact" required>
-            </div>
-            
-            <div class="form-group" style="margin-bottom: 15px;">
-                <label for="address">Address:</label><br>
-                <input type="text" id="address" name="address">
-            </div>
-            
-            <div class="form-group" style="margin-bottom: 15px;">
-                <label>Gender:</label><br>
-                <input type="radio" id="male" name="gender" value="Male" required> <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="Female" required> <label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="Other" required> <label for="other">Other</label>
-            </div>
-            
-            <div class="form-group" style="margin-bottom: 15px;">
-                <label for="resume">Upload Resume:</label><br>
-                <input type="file" id="resume" name="resume" required>
-            </div>
-            
-            <div class="form-group" style="margin-bottom: 15px;">
-                <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">I agree to the terms and conditions</label>
-            </div>
-            
-            <div class="form-group" style="margin-bottom: 15px;">
-                <button type="submit">Submit Application</button>
-            </div>
-        </form>
-    </div>
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <h1>Rock Your Life</h1>
+      <h2>Application Form for Data Analyst Role</h2>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h3>Personal Details</h3>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>  <tr>
+          <td>Address:</td>
+          <td><input type="text" name="address"></td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+        <tr>
+          <td>Phone:</td>
+          <td><input type="text" name="phone"></td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email"></td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" name="age"></td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+          </td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+        <tr>
+          <td>Attach CV:</td>
+          <td><input type="file" name="cv"></td>
+        </tr>
+      </table>
+    </td>
+    <td valign="top">
+      <h3>Checks</h3>
+      <form>
+        <p>  <input type="checkbox" name="terms"> I Agree to Terms and Conditions of the Company<br>
+          <input type="checkbox" name="data"> You will work with data privacy blah blah... <br>
+          <input type="checkbox" name="accuracy"> I confirm that the information provided is accurate... <br>
+        </p>  <h3>Final Check</h3>
+        <p>  <input type="checkbox" name="knowledge"> All the data provided is true to my knowledge.
+        </p>  <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </td>
+  </tr>
+</table>
+
 </body>
 </html>
